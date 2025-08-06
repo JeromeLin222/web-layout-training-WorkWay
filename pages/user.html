@@ -11,7 +11,7 @@
     <%- include('./layout/header'); -%>
 
     <main>
-      <section class="section-padding-y bg    -gray">
+      <section class="section-padding-y bg-gray">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-10">
@@ -39,7 +39,31 @@
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">職旅個人資料</div>
-                <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">職旅預約紀錄</div>
+                <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">
+                  <div class="record-panel-color panel-rounded p-5 shadow">
+                    <h2 class="fs-4 mb-4">預約紀錄</h2>
+                    <div class="d-flex gap-4 mb-5">
+                      <div class="card w-100 py-4">
+                        <div class="card-body text-center">
+                          <h3 class="fs-2 mb-2 text-blue fw-bold">3</h3>
+                          <p class="subtitle">已完成諮詢</p>
+                        </div>
+                      </div>
+                      <div class="card w-100 py-4">
+                        <div class="card-body text-center">
+                          <h3 class="fs-2 mb-2 text-blue fw-bold">2025/10/10</h3>
+                          <p class="subtitle">即將到來</p>
+                        </div>
+                      </div>
+                      <div class="card w-100 py-4">
+                        <div class="card-body text-center">
+                          <h3 class="fs-2 mb-2 text-blue fw-bold">3/6</h3>
+                          <p class="subtitle">使用方案進度</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">職旅計畫</div>
               </div>
             </div>
