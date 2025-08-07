@@ -38,7 +38,111 @@
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">職旅個人資料</div>
+                <!-- personal-info -->
+                <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                  <div class="record-panel-color panel-rounded p-5 shadow">
+                    <div class="d-flex gap-2 mb-5">
+                      <div class="flex-shink-0 side-width">
+                        <h2 class="fs-2">個人資料</h2>
+                      </div> 
+                      <div class="w-100">
+                        <div class="d-flex mb-4">
+                          <img src="/assets/images/avatar.png" alt="avatar" class="rounded-circle me-3">
+                          <div class="align-self-end">
+                            <label for="avatar-upload" class="form-label btn border rounded-4 py-2">
+                              <span class="material-icons-outlined align-bottom">
+                                file_upload
+                                </span>更新頭貼</label>
+                            <input class="form-control d-none" type="file" id="avatar-upload">
+                          </div>
+                        </div>
+                        <!-- name -->
+                        <form class="form-floating mb-4">
+                          <input type="text" class="form-control" id="user-name" placeholder="姓名" value="Mokumaru">
+                          <label for="user-name">姓名</label>
+                        </form>
+                        <!-- gender -->
+                        <p class="mb-2">性別</p>
+                        <div class="px-2 mb-4 ">
+                          <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">女性</label>
+                          </div>
+                          <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">男性</label>
+                          </div>
+                          <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">不願透露</label>
+                          </div>
+                        </div>
+                        <!-- birthday -->
+                        <form class="form-floating mb-4">
+                          <input type="date" class="form-control" id="birthday" value="2000-01-10">
+                          <label for="birthday">生日</label>
+                        </form>
+                        <!-- password -->
+                        <p class="mb-2">密碼</p>
+                        <button type="button" class="btn border rounded-4 py-2 me-1 mb-4" data-bs-toggle="modal" data-bs-target="#passwordModal">修改密碼
+                          <span class="material-icons-outlined align-bottom">
+                            chevron_right
+                            </span>
+                        </button>
+                        <!-- password modal -->
+                        <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-width">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">更新密碼</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-floating mb-4">
+                                  <input type="password" class="form-control" id="newPassword" placeholder="Password">
+                                  <label for="newPassword">新密碼</label>
+                                </div>
+                                <div class="form-floating">
+                                  <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+                                  <label for="confirmPassword">確認密碼</label>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn rounded-4 btn-dark py-2">更新密碼<span class="material-icons-outlined align-bottom ms-1">
+                                  chevron_right
+                                  </span></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- email -->
+                        <form class="form-floating mb-4">
+                          <input type="email" class="form-control" id="email" value="mokumaru@mail.com">
+                          <label for="email">信箱</label>
+                          <p class="text-secondary">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                        </form>
+                        <!-- phone -->
+                        <form class="form-floating mb-4">
+                          <input type="tel" class="form-control" id="phone" value="09-1234-5678">
+                          <label for="phone">聯絡電話</label>
+                        </form>
+                        <!-- address -->
+                        <form class="form-floating">
+                          <input type="text" class="form-control" id="address" value="高雄市三民區九如一路 87 號">
+                          <label for="address">通訊地址</label>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn border rounded-4 me-4 py-2">重新填寫<span class="material-icons-outlined align-bottom ms-1">
+                        chevron_right
+                        </span></button>
+                      <button type="button" class="btn rounded-4 btn-dark py-2">儲存更新<span class="material-icons-outlined align-bottom ms-1">
+                        chevron_right
+                        </span></button>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">
                   <div class="record-panel-color panel-rounded p-5 shadow">
                     <h2 class="fs-4 mb-4">預約紀錄</h2>
@@ -545,10 +649,10 @@
                       </div>
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn border rounded-4 me-4 py-2">匯出 PDF <span class="material-icons-outlined align-bottom">
+                      <button type="button" class="btn border rounded-4 me-4 py-2">匯出 PDF<span class="material-icons-outlined align-bottom ms-1">
                         chevron_right
                         </span></button>
-                      <button type="button" class="btn rounded-4 btn-dark py-2">儲存更新 <span class="material-icons-outlined align-bottom">
+                      <button type="button" class="btn rounded-4 btn-dark py-2">儲存更新<span class="material-icons-outlined align-bottom ms-1">
                         chevron_right
                         </span></button>
                     </div>
