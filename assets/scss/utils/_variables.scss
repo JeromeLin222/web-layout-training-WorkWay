@@ -5,8 +5,34 @@
 
 // Color system
 
+$natural-95: #F0F3F5;
+$natural-90: #E0E5EB;
+$natural-85: #D1D9E1;
+$natural-75: #B2BFCC;
+$natural-60: #8599AD;
+$natural-50: #667F99;
+$natural-30: #3D4D5C;
+$natural-10: #141A1F;
+$black: $natural-10;
+$dark: $black;
+$white: #fcfcfd;
+$light: $white;
+// $alpha: rgba($black, 0.6);
+// $success-90: #DEFCCF;
+// $success-40: #47C20A;
+// $success-30: #369108;
+// $danger-90: #FFD0CC;
+// $danger-70: #FF7467;
+// $danger-45: #E51300;
+// $warning-90: #FFEACC;
+// $warning-48: #F58F00;
+// $warning-35: #B26800;
+
+
+
+
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
+// $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -16,7 +42,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+// $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -69,7 +95,7 @@ $colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:   3.5 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
@@ -297,6 +323,23 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+//custom color
+$primary-97: #F1F4FD;
+$primary-90: #D2D9F9;
+$primary-80: #A4B4F3;
+$primary-70: #A4B4F3;
+$primary-60: #4A69E8;
+$primary-40: #1736B5;
+$primary-25: #0E2271;
+$primary: $primary-60;
+
+$secondary-90: #D7F4EC;
+$secondary-70: #87DEC5;
+$secondary-50: #36C99F;
+$secondary-35: #36C99F;
+$secondary: $secondary-50;
+
+
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
@@ -310,14 +353,50 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
+  "primary-97": $primary-97,
+  "primary-90": $primary-90,
+  "primary-80": $primary-80,
+  "primary-70": $primary-70,
+  "primary-60": $primary-60,
+  "primary-40": $primary-40,
+  "primary-25": $primary-25,
+
+  "secondary-90": $secondary-90,
+  "secondary-70": $secondary-70,
+  "secondary-50": $secondary-50,
+  "secondary-35": $secondary-35,
+
+  "natural-95": $natural-95,
+  "natural-90": $natural-90,
+  "natural-85": $natural-85,
+  "natural-75": $natural-75,
+  "natural-60": $natural-60,
+  "natural-50": $natural-50,
+  "natural-30": $natural-30,
+  "natural-10": $natural-10,
+  
+  "black": $black,
+  "dark": $dark,
+  "white": $white,
+  "light": $light,
+  // "success-90": $success-90,
+  // "success-40": $success-40,
+  // "success-30": $success-30,
+  // "danger-90": $danger-90,
+  // "danger-70": $danger-70,
+  // "danger-45": $danger-45,
+  // "warning-90": $warning-90,
+  // "warning-48": $warning-48,
+  // "warning-35": $warning-35,
+
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  // "light":      $light,
+  // "dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
 
