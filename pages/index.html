@@ -8,9 +8,11 @@
     <title>index</title>
   </head>
   <body>
+    <% locals.userState = 'guest'; %>
     <%- include('./layout/header'); -%>
 
-  
+    <a href="user.html">user</a>
+    
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
