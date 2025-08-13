@@ -11,7 +11,38 @@
     <% locals.userState = 'guest'; %>
     <%- include('./layout/header'); -%>
 
-    <a href="user.html">user</a>
+    <main>
+      <section class="hero-section py-8">
+        <div class="d-flex mb-6 justify-content-center align-items-center">
+          <div class="hero-slogan">
+            <h1 class="fs-2 fs-md-xl fw-bold text-center mb-5">一起陪伴、探索<br>還有你那些未完成的夢</h1>
+            <div class="d-md-flex text-center justify-content-between">
+              <p class="text-center fs-6 text-md-start mb-4 mb-md-0 text-natural-50">自由工作很美，也很難。<br>我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
+              <button type="button" class="btn fs-5 ps-5 fs-md-4 d-inline-flex align-items-center btn-secondary fw-bold">
+                開始你的職旅
+                <span class="ms-1 material-icons-outlined">
+                  chevron_right
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-md-4">
+              <img class="d-none d-md-block" src="/assets/images/index/hero-1.png" alt="hero-1">
+            </div>
+            <div class="col-md-4">
+              <img class="mb-5 d-none d-md-block" src="/assets/images/index/hero-2.png" alt="hero-2">
+              <img class="d-none d-md-block" src="/assets/images/index/hero-3.png" alt="hero-3">
+            </div>
+            <div class="col-md-4">
+              <img src="/assets/images/index/hero-4.png" alt="hero-4">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     
     <%- include('./layout/footer'); -%>
 

@@ -1,3 +1,13 @@
-.index-title {
-  font-size: 100px;
+.hero-section {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-size: 800px 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .hero-slogan {
+    max-width: 815px;
+  }
+  // .btn {
+  //   line-height: 1.2;
+  // }
 }
+
