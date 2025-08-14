@@ -504,6 +504,7 @@ $spacers: (
   6: $spacer * 2.5,
   7: $spacer * 3,
   8: $spacer * 5,
+  9: $spacer * 6.25,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -736,6 +737,8 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base * 1.125 !default;
 $h7-font-size:                $font-size-base !default;
+$h8-font-size:                $font-size-base * 0.875!default;
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -748,6 +751,7 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
+  sm: $h8-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
