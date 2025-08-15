@@ -3,13 +3,25 @@ const swiper = new Swiper('.flow-swiper', {
     breakpoints: {
         0: {
             enabled: true,
-            slidesPerView: 1.5,
+            slidesPerView: 1.1,
             spaceBetween: 16
         },
 
         992: {
             enabled: false,
             slidesPerView: 4,
+            spaceBetween: 24
+        }
+    }
+
+  });
+
+  const storySwiper = new Swiper('.story-swiper', {
+    slidesPerView: 1.08,
+    spaceBetween: 16,
+    breakpoints: {
+        992: {
+            slidesPerView: 2.8,
             spaceBetween: 24
         }
     }
