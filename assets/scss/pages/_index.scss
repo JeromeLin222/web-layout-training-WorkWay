@@ -8,6 +8,13 @@
   }
 }
 
+.partner-section {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-size: 800px 800px;
+  background-position:  calc(100% + 180px) calc(100% + 300px);
+  background-repeat: no-repeat;
+}
+
 .workway-hover:hover {
   .workway-hover-decoraction {
     display: flex !important;
