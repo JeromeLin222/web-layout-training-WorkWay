@@ -27,3 +27,11 @@
   border-top-left-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
 }
+
+.qa-section {
+  background-image: url(/assets/images/index/bg-grid.png);
+}
+
+.border-top-dashed {
+  border-top: 1px dashed $natural-85;
+}
