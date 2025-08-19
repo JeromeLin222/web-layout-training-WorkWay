@@ -1,0 +1,12 @@
+.banner-section {
+    // 預設：手機版圖片（mobile-first）
+    background-image: url('/assets/images/service/banner-bg.png');
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    // 桌面版：覆蓋成桌面圖片
+    @include media-breakpoint-up(md) {
+        background-image: url('/assets/images/service/banner-bg-pc.png');
+    }
+}
