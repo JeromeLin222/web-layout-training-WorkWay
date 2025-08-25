@@ -11,8 +11,6 @@
 
 .hot-input:checked + .hot-label {
     border: 2px solid $secondary;
-    // border-color: $secondary;
-
     &::before {
         content: "HOT";
         position: absolute;
