@@ -19,3 +19,26 @@
         border-color: $secondary-70;
     }
 }
+
+.domain-list-mark {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    &::before{
+        content: '';
+        display: block;
+        width: 9.9px;
+        height: 9.9px;
+        border: 2px solid $primary;
+        margin-right: 13px;
+        transform: rotate(45deg);
+    }
+}
+
+.service-icon {
+    width: 120px;
+    height: auto;
+    @include media-breakpoint-up(lg) {
+        width: 160px;
+    }
+}
