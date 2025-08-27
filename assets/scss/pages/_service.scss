@@ -34,3 +34,11 @@
         transform: rotate(45deg);
     }
 }
+
+.service-icon {
+    width: 120px;
+    height: auto;
+    @include media-breakpoint-up(lg) {
+        width: 160px;
+    }
+}
