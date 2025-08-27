@@ -10,3 +10,12 @@
         background-image: url('/assets/images/service/banner-bg-pc.png');
     }
 }
+
+.plan-item {
+    &.active.border {
+        border-color: $secondary-50;
+    }
+    &:hover.border {
+        border-color: $secondary-70;
+    }
+}
