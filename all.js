@@ -27,3 +27,14 @@ const swiper = new Swiper('.flow-swiper', {
     }
 
   });
+
+  const partnerSwiper = new Swiper('.partner-swiper', {
+    slidesPerView: 1.3,
+    spaceBetween: 24,
+    autoHeight: false,
+    breakpoints: {
+        768: {
+            slidesPerView: 4.2,
+        }
+    }
+  })
